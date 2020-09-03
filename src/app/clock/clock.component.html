@@ -1,0 +1,8 @@
+<div>
+    <p>
+        <span *ngIf="this.date.getHours() > 4 && this.date.getHours() < 12">Good morning!</span> 
+        <span *ngIf="this.date.getHours() >= 12 && this.date.getHours() < 18">Good afternoon!</span> 
+        <span *ngIf="this.date.getHours() >= 18 || this.date.getHours() <= 4">Good evening!</span> 
+        The time is {{ this.date.getHours() }}:{{ this.date.getMinutes() }}:{{ this.date.getSeconds()}}
+    </p>
+</div>
